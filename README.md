@@ -1,6 +1,6 @@
 ﻿# 30 dias de projetos usando JavaScript
 
- 1) **Day one**: How To Make Weather App:
+ 1) **Day one**: How To Make Weather App:<br>
    Crédito das fotos usadas neste projeto:
     * <a href="https://www.flaticon.com/br/icones-gratis/por-cento" title="por cento ícones">Por cento ícones criados por Freepik - Flaticon</a>
     * <a href="https://www.flaticon.com/br/icones-gratis/chuva" title="chuva ícones">Chuva ícones criados por apien - Flaticon</a>
