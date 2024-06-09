@@ -7,6 +7,6 @@
     * <a href="https://www.flaticon.com/br/icones-gratis/vento" title="vento ícones">Vento ícones criados por Freepik - Flaticon</a>
     * <a href="https://www.flaticon.com/br/icones-gratis/buscador" title="buscador ícones">Buscador ícones criados por Freepik - Flaticon</a>
 
-2) **Day Two** To - Do App
+2) **Day Two** To - Do App <br>
   Crédito das fotos usadas neste projeto:
   * <a href="https://www.freeiconspng.com/img/1450">checklist icon 350</a>
