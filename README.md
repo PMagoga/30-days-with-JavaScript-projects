@@ -10,3 +10,5 @@
 2) **Day Two** To - Do App <br>
   Crédito das fotos usadas neste projeto:
   * <a href="https://www.freeiconspng.com/img/1450">checklist icon 350</a>
+  * <a href="https://www.flaticon.com/br/icones-gratis/carraca" title="carraça ícones">Carraça ícones criados por Smashicons - Flaticon</a>
+  * <a href="https://www.flaticon.com/br/icones-gratis/circulo" title="círculo ícones">Círculo ícones criados por FR_Media - Flaticon</a>
