@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de46d788ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="/media/music_player.jpg" alt="Imagem de um tocador de música" class="song-img">
+            <h1>Holla Lotta Love</h1>
+            <p>Led Zeppelin</p>
+            <audio controls>
+                <source src="/media/music/07.Crazy.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress-bar">
+        </div>
+    </div>
+</body>
+</html>
