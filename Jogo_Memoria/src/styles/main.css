@@ -4,6 +4,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #fc1e8a;
+    user-select: none;
 }
 
 .container {
@@ -60,4 +61,26 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    font-size: 4.5em;
+    transform: rotateY(180deg);
+    transition: 0.25s;
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: rotateY(0deg);
+    background: #404040;
+    transition: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.item.boxOpen {
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after {
+    transform: rotateY(180deg);
 }
