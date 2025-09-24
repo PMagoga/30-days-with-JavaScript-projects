@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Punições Publicadas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📂 Punições Publicadas</h1>
+  <div id="lista-publicadas"></div>
+
+  <button onclick="voltar()">⬅️ Voltar</button>
+
+  <script>
+    async function carregarPublicadas() {
+      const res = await fetch("/api/publicadas");
+      const publicadas = await res.json();
+
+      const container = document.getElementById("lista-publicadas");
+      container.innerHTML = "";
+
+      if (publicadas.length === 0) {
+        container.innerHTML = "<p>Nenhuma punição publicada até o momento.</p>";
+        return;
+      }
+
+      publicadas.forEach(p => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <strong>${p.nome}</strong><br>
+          ${p.fato}<br>
+          ${p.dataEntrega ? "📅 Entregue: " + p.dataEntrega + "<br>" : ""}
+          ${p.dataDevolucao ? "📅 Devolvida: " + p.dataDevolucao + "<br>" : ""}
+          ${p.punicao ? "⚖️ Punição: " + p.punicao + "<br>" : ""}
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function voltar() {
+      window.location.href = "index.html";
+    }
+
+    carregarPublicadas();
+  </script>
+</body>
+</html>

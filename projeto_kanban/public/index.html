@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de FATD - Kanban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> CONTROLE DE FATD</h1>
+
+  <div class="form">
+    <input id="nome" placeholder="Militar">
+    <input id="fato" placeholder="Fato ocorrido">
+    <button onclick="criarFATD()">Cadastrar FATD</button>
+  </div>
+
+  <div class="kanban">
+    <div class="coluna" id="confeccionada"><h2>Confeccionadas</h2></div>
+    <div class="coluna" id="entregue"><h2>Entregues</h2></div>
+    <div class="coluna" id="devolvida"><h2>Devolvidas</h2></div>
+    <div class="coluna" id="julgada"><h2>Julgadas</h2></div>
+    <div class="coluna" id="publicada"><h2>Publicadas</h2></div>
+  </div>
+
+  <button onclick="abrirPublicadas()" id="botao-publicadas">📂 Ver Punições Publicadas</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

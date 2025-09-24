@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 20px;
+}
+
+h1 { text-align: center; }
+
+.form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kanban {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coluna {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 18%;
+  min-height: 300px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card {
+  background: #e3e3ff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+#botao-publicadas {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
