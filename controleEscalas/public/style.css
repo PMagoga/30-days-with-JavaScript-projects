@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  margin-bottom: 15px;
+}
+
+button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+td.x {
+  background: #ff9999;
+  font-weight: bold;
+}
+
+th.fimsemana {
+  background: #d9edf7;
+}
+
+td.x { background: #ff9999; font-weight: bold; }
+th.fimsemana { background: #d9edf7; cursor: pointer; }
+.tabela-bloco { margin-bottom: 20px; }
+
+td.x {
+  background: #ff9999;
+  font-weight: bold;
+}
+th.fimsemana {
+  background: #d9edf7;
+  cursor: pointer;
+}
+.tabela-bloco {
+  margin-bottom: 20px;
+}
+th {
+  position: relative;
+}
+th[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background: #333;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
