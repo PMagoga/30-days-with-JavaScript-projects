@@ -17,6 +17,11 @@ let greeting = message.slice(0, 5);
 console.log(greeting);  // Hello
 
 let message2 = "Hello, world!";
-let world = message.slice(7);
+let world = message2.slice(7);
 
 console.log(world);  // world!
+
+let message3 = "JavaScript is fun!";
+let lastWord = message3.slice(-4);
+
+console.log(lastWord);  // fun!
