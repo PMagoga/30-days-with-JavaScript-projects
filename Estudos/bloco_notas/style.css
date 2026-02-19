@@ -1,0 +1,67 @@
+:root {
+    --bg-dark: #0f172a;       /* Fundo principal */
+    --bg-sidebar: #1e293b;    /* Sidebar e campos de busca */
+    --primary-blue: #2563eb;  /* Botão "Nova Nota" */
+    --text-main: #f8fafc;     /* Títulos brancos */
+    --text-muted: #94a3b8;    /* Subtítulos e ícones */
+    --border-color: #334155;  /* Bordas sutis */
+    --card-hover: #1e293b;    /* Hover do card de nota */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+/*SideBar*/
+
+.sidebar {
+    width: 260px;
+    background-color: var(--bg-sidebar);
+    height: 100vh;
+    padding: 24px;
+}
+.sidebar-title > h2::before{
+    content: "📒";
+}
+
+#add-note-btn {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 15px;
+}
+
+#add-note-btn::before {
+    /* 1. O código Unicode do ícone de "+" (Plus) */
+    content: "\f067";
+
+    /* 2. A fonte instalada localmente */
+    font-family: "Font Awesome 7 Free";
+
+    /* 3. Peso 900 para ícones Solid (o mais comum) */
+    font-weight: 900;
+
+    /* 4. Estilização visual */
+    font-size: 14px;
+    margin-right: 8px;
+    display: inline-block;
+}
+

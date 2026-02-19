@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Bloco de Anotações</title>
+  <link rel="stylesheet"
+        href="style.css">
+  <link rel="stylesheet"
+        href="assets/fontawesome/css/all.css">
+  <link rel="stylesheet"
+        href="assets/fontawesome/webfonts">
+</head>
+<body>
+<div class="">
+  <aside class="sidebar">
+    <div class="sidebar-title">
+      <h2>Bloco de Notas</h2>
+    </div>
+    <div class="sidebar-btn">
+      <button id="add-note-btn" class="">
+        <span>Nova Nota</span>
+      </button>
+    </div>
+  </aside>
+
+  <main class="">
+    <header class="">
+      <div class="">
+        <div class="">
+              <span class="">
+                <span class="">search</span>
+              </span>
+          <input id="search-input" class="" placeholder="Procurar por notas..." type="text" />
+        </div>
+      </div>
+      <div class="">
+        <span class="">Bloco de Notas</span>
+      </div>
+    </header>
+
+    <div class="">
+      <div class="">
+        <div>
+          <h1 class="">Suas Notas</h1>
+          <p class="">Gerencie suas ideias e tarefas.</p>
+        </div>
+      </div>
+
+      <div id="notes-grid" class="">
+        <button class="">
+          <div class="">
+            <span class="">add</span>
+          </div>
+          <span class="">Adicionar nova nota</span>
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="note-modal" class="">
+  <div class="">
+    <div class="">
+      <h2 class="">Criar Nova Nota</h2>
+      <div class="">
+        <div>
+          <label class="">Título</label>
+          <input type="text" id="modal-title" class="" placeholder="Ex: Lista de Compras">
+        </div>
+        <div>
+          <label class="">Categoria</label>
+          <select id="modal-category" class="">
+            <option value="Trabalho" data-color="primary">Trabalho</option>
+            <option value="Pessoal" data-color="emerald">Pessoal</option>
+            <option value="Ideias" data-color="purple">Ideias</option>
+          </select>
+        </div>
+        <div>
+          <label class="">Conteúdo</label>
+          <textarea id="modal-content" rows="4" class="" placeholder="Escreva sua nota aqui..."></textarea>
+        </div>
+      </div>
+      <div class="">
+        <button onclick="toggleModal()" class="">Cancelar</button>
+        <button onclick="saveNewNote()" class="">Salvar Nota</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

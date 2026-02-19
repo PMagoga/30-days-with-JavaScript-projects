@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de datas</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        background: #f4f4f9;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 300px;
+        margin: 15px auto;
+      }
+      button {
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #resultado {
+        margin-top: 20px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Diferença entre Datas</h2>
+    <div class="container">
+      <label>Data Inicial:</label>
+      <input type="date" id="dataInicio" />
+      <label>Data Final:</label>
+      <input type="date" id="dataFim" />
+      <button id="btnCalcular">Calcular Diferença</button>
+    </div>
+    <div id="resultado"></div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
